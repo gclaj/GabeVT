@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500" role="img" aria-label="Portrait of Gabe Lajeunesse (placeholder — replace with campaign photo)">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dcebe2"/>
+      <stop offset="1" stop-color="#b9d4c4"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="500" fill="url(#bg)"/>
+  <!-- Mountain backdrop -->
+  <path d="M0 380 L90 260 L160 330 L240 220 L400 380 Z" fill="#2a5c44" opacity="0.25"/>
+  <!-- Figure silhouette -->
+  <circle cx="200" cy="185" r="70" fill="#17372a" opacity="0.85"/>
+  <path d="M90 500 C90 385 140 330 200 330 C260 330 310 385 310 500 Z" fill="#17372a" opacity="0.85"/>
+  <text x="200" y="452" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#faf7f0">CAMPAIGN PHOTO</text>
+  <text x="200" y="474" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#dcebe2">Replace assets/portrait-placeholder.svg</text>
+</svg>
