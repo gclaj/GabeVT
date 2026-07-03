@@ -1,7 +1,8 @@
 /* ============================================================
    Gabe for Vermont — Campaign Site Design System
-   Palette: Green Mountain forest green, harvest gold, granite,
-   and warm cream. Typography: serif display + humanist sans.
+   Campaign colors: green, white, and blue.
+   Deep Green Mountain green + crisp white + lake blue accent.
+   Typography: serif display + humanist sans.
    ============================================================ */
 
 :root {
@@ -12,15 +13,16 @@
   --green-600: #37725a;
   --green-100: #dcebe2;
   --green-50:  #eef5f0;
-  --gold-500:  #d99a2b;
-  --gold-400:  #e9b44c;
-  --gold-100:  #f9ecd2;
-  --cream:     #faf7f0;
+  --blue-700:  #1f4e8c;
+  --blue-600:  #2563c4;
+  --blue-300:  #8fc1ea;
+  --blue-50:   #eaf2fb;
+  --cream:     #ffffff;
   --paper:     #ffffff;
   --ink:       #1c2721;
   --ink-soft:  #47554d;
   --granite:   #6b7770;
-  --line:      #e3ddd0;
+  --line:      #dbe4ec;
   --radius:    10px;
   --shadow-sm: 0 1px 3px rgba(18, 43, 29, 0.10);
   --shadow-md: 0 8px 28px rgba(18, 43, 29, 0.14);
@@ -66,7 +68,7 @@ a:hover { color: var(--green-600); }
 
 .skip-link {
   position: absolute; left: -9999px; top: 0;
-  background: var(--gold-400); color: var(--green-950);
+  background: var(--blue-600); color: #fff;
   padding: 10px 18px; z-index: 200; font-weight: 700; border-radius: 0 0 8px 0;
 }
 .skip-link:focus { left: 0; }
@@ -79,7 +81,7 @@ a:hover { color: var(--green-600); }
   text-align: center;
   padding: 7px 16px;
 }
-.topbar a { color: var(--gold-400); font-weight: 600; }
+.topbar a { color: var(--blue-300); font-weight: 600; }
 
 .site-header {
   position: sticky; top: 0; z-index: 100;
@@ -102,7 +104,7 @@ a:hover { color: var(--green-600); }
 .brand .brand-sub {
   display: block; font-family: var(--font-body);
   font-size: 0.68rem; font-weight: 600; letter-spacing: 0.16em;
-  text-transform: uppercase; color: var(--gold-400);
+  text-transform: uppercase; color: var(--blue-300);
 }
 
 .nav { display: flex; align-items: center; gap: 4px; }
@@ -111,18 +113,18 @@ a:hover { color: var(--green-600); }
   padding: 10px 12px; border-radius: 6px;
 }
 .nav a:hover { background: var(--green-800); color: #fff; }
-.nav a[aria-current="page"]:not(.btn) { color: var(--gold-400); }
+.nav a[aria-current="page"]:not(.btn) { color: var(--blue-300); }
 
 .btn {
   display: inline-block;
-  background: var(--gold-400); color: var(--green-950);
+  background: var(--blue-600); color: #fff;
   font-weight: 800; text-decoration: none;
   padding: 12px 26px; border-radius: 999px;
-  border: 2px solid var(--gold-400);
+  border: 2px solid var(--blue-600);
   letter-spacing: 0.02em;
   transition: transform 0.12s ease, background 0.12s ease;
 }
-.btn:hover { background: var(--gold-500); border-color: var(--gold-500); color: var(--green-950); transform: translateY(-1px); }
+.btn:hover { background: var(--blue-700); border-color: var(--blue-700); color: #fff; transform: translateY(-1px); }
 .btn.btn-outline {
   background: transparent; color: #fff; border-color: rgba(255,255,255,0.7);
 }
@@ -164,8 +166,8 @@ a:hover { color: var(--green-600); }
 .hero .kicker {
   display: inline-block;
   font-size: 0.8rem; font-weight: 800; letter-spacing: 0.22em; text-transform: uppercase;
-  color: var(--gold-400);
-  border: 1.5px solid rgba(233,180,76,0.6);
+  color: var(--blue-300);
+  border: 1.5px solid rgba(143,193,234,0.6);
   padding: 7px 14px; border-radius: 999px; margin-bottom: 22px;
 }
 .hero .lede { font-size: 1.22rem; line-height: 1.6; color: #dfe9e0; max-width: 34em; }
@@ -181,15 +183,17 @@ a:hover { color: var(--green-600); }
 
 /* ---------- Sections ---------- */
 .section { padding: 72px 0; }
-.section.tint { background: var(--paper); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.section.tint { background: #f4f8fc; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .section.dark { background: var(--green-900); color: #e6efe8; }
 .section.dark h2, .section.dark h3 { color: #fff; }
-.section.gold { background: var(--gold-100); }
+.section.blue { background: var(--blue-50); }
 
 .eyebrow {
   font-size: 0.78rem; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase;
-  color: var(--gold-500); margin-bottom: 10px;
+  color: var(--blue-700); margin-bottom: 10px;
 }
+.section.dark .eyebrow, .page-hero .eyebrow { color: var(--blue-300); }
+
 .section-head { max-width: 760px; margin-bottom: 42px; }
 .section-head.center { margin-left: auto; margin-right: auto; text-align: center; }
 
@@ -224,7 +228,7 @@ a:hover { color: var(--green-600); }
 .stat .num {
   font-family: var(--font-display);
   font-size: clamp(2.2rem, 4.5vw, 3.2rem);
-  font-weight: 700; color: var(--gold-400); line-height: 1;
+  font-weight: 700; color: var(--blue-300); line-height: 1;
 }
 .section:not(.dark) .stat .num { color: var(--green-800); }
 .stat .label { font-size: 0.95rem; margin-top: 8px; opacity: 0.92; }
@@ -237,12 +241,12 @@ a:hover { color: var(--green-600); }
   line-height: 1.45; color: #fff;
 }
 .quote-band blockquote p { margin: 0; }
-.quote-band blockquote p::before { content: "“ "; color: var(--gold-400); font-size: 1.4em; line-height: 0; }
-.quote-band blockquote p::after { content: " ”"; color: var(--gold-400); font-size: 1.4em; line-height: 0; }
+.quote-band blockquote p::before { content: "“ "; color: var(--blue-300); font-size: 1.4em; line-height: 0; }
+.quote-band blockquote p::after { content: " ”"; color: var(--blue-300); font-size: 1.4em; line-height: 0; }
 .quote-band cite {
   display: block; margin-top: 22px; font-family: var(--font-body);
   font-style: normal; font-size: 0.9rem; letter-spacing: 0.12em; text-transform: uppercase;
-  color: var(--gold-400); font-weight: 700;
+  color: var(--blue-300); font-weight: 700;
 }
 
 /* ---------- Issue / plan pages ---------- */
@@ -267,7 +271,7 @@ a:hover { color: var(--green-600); }
 .issue-block ul { padding-left: 1.3em; }
 .issue-block li { margin-bottom: 0.55em; }
 .issue-block .commit {
-  background: var(--green-50); border-left: 4px solid var(--gold-400);
+  background: var(--blue-50); border-left: 4px solid var(--blue-600);
   border-radius: 0 8px 8px 0; padding: 16px 20px; margin-top: 18px;
   font-weight: 600; color: var(--green-900);
 }
@@ -275,7 +279,7 @@ a:hover { color: var(--green-600); }
 .plan-step { display: grid; grid-template-columns: 72px 1fr; gap: 24px; margin-bottom: 34px; }
 .plan-step .n {
   width: 60px; height: 60px; border-radius: 50%;
-  background: var(--green-800); color: var(--gold-400);
+  background: var(--green-800); color: #fff;
   font-family: var(--font-display); font-size: 1.6rem; font-weight: 700;
   display: flex; align-items: center; justify-content: center;
 }
@@ -290,11 +294,11 @@ a:hover { color: var(--green-600); }
 .timeline li::before {
   content: ""; position: absolute; left: 2px; top: 6px;
   width: 16px; height: 16px; border-radius: 50%;
-  background: var(--gold-400); border: 3px solid var(--green-800);
+  background: var(--blue-600); border: 3px solid var(--green-800);
 }
 .timeline .when {
   font-size: 0.8rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase;
-  color: var(--gold-500);
+  color: var(--blue-700);
 }
 .timeline h3 { margin-bottom: 0.2em; }
 
@@ -317,7 +321,7 @@ a:hover { color: var(--green-600); }
 .field label { font-weight: 700; font-size: 0.92rem; color: var(--green-900); }
 .field input, .field select, .field textarea {
   font: inherit; padding: 12px 14px;
-  border: 1.5px solid var(--line); border-radius: 8px; background: var(--cream);
+  border: 1.5px solid var(--line); border-radius: 8px; background: #f6f9fc;
 }
 .field input:focus, .field select:focus, .field textarea:focus {
   outline: 2px solid var(--green-600); border-color: var(--green-600); background: #fff;
@@ -335,8 +339,8 @@ a:hover { color: var(--green-600); }
   color: var(--green-900); text-decoration: none; background: var(--paper);
 }
 .donate-tiers a:hover { background: var(--green-800); color: #fff; }
-.donate-tiers a.featured { background: var(--gold-400); border-color: var(--gold-400); }
-.donate-tiers a.featured:hover { background: var(--gold-500); border-color: var(--gold-500); color: var(--green-950); }
+.donate-tiers a.featured { background: var(--blue-600); border-color: var(--blue-600); color: #fff; }
+.donate-tiers a.featured:hover { background: var(--blue-700); border-color: var(--blue-700); color: #fff; }
 
 .notice {
   font-size: 0.88rem; color: var(--ink-soft);
@@ -365,7 +369,7 @@ details.faq[open] { box-shadow: var(--shadow-sm); }
 .site-footer .cols { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 36px; margin-bottom: 40px; }
 .site-footer h4 { color: #fff; font-family: var(--font-body); font-size: 0.85rem; letter-spacing: 0.14em; text-transform: uppercase; }
 .site-footer a { color: #d8e4db; text-decoration: none; }
-.site-footer a:hover { color: var(--gold-400); }
+.site-footer a:hover { color: var(--blue-300); }
 .site-footer ul { list-style: none; padding: 0; margin: 0; }
 .site-footer li { margin-bottom: 10px; }
 .site-footer .disclaimer {
@@ -383,7 +387,7 @@ details.faq[open] { box-shadow: var(--shadow-sm); }
   border: 1.5px solid rgba(255,255,255,0.3);
   display: inline-flex; align-items: center; justify-content: center;
 }
-.social a:hover { border-color: var(--gold-400); }
+.social a:hover { border-color: var(--blue-300); }
 
 /* ---------- Utility ---------- */
 .center { text-align: center; }

@@ -27,9 +27,10 @@ Shared assets live in `css/styles.css`, `js/main.js`, and `assets/`.
 
 ## Launch checklist (do these before going live)
 
-1. **Photos.** Replace `assets/portrait-placeholder.svg` with real campaign
-   photography (search the HTML for `portrait-placeholder` — used on the home
-   and about pages). Add an `og:image` meta tag to each page for social sharing.
+1. **Photos.** Campaign photography is in place: `assets/gabe-statehouse.jpg`
+   (home hero, about page), `assets/gabe-headshot.jpg` (home "Meet Gabe"
+   section), and `assets/og-image.jpg` (the social-share card used by every
+   page's `og:image` tag). To swap a photo, replace the file and keep the name.
 2. **Donations.** In `donate.html`, replace the `#donate-pending` hrefs on the
    donation tiers with the campaign's real payment link (e.g. an ActBlue page),
    then delete the "Online donations are being set up" notice.
@@ -67,7 +68,8 @@ To preview locally: `python3 -m http.server 8000` in the repo root, then open
 
 Every page is plain HTML — open it, edit the text, save. Site-wide styles are
 CSS custom properties at the top of `css/styles.css` (colors, fonts, spacing),
-so a rebrand is a five-line change. `js/main.js` handles the mobile menu,
+so a rebrand is a five-line change. The palette follows the campaign's
+green, white, and blue. `js/main.js` handles the mobile menu,
 stat count-up animation, and placeholder-form notices; nothing else depends on it.
 
 ## Sources for site content

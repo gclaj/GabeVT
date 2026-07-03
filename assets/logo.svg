@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="Gabe for Vermont logo">
-  <circle cx="24" cy="24" r="23" fill="#17372a" stroke="#e9b44c" stroke-width="2"/>
+  <circle cx="24" cy="24" r="23" fill="#17372a" stroke="#ffffff" stroke-width="2"/>
   <!-- Green Mountains -->
   <path d="M6 32 L16 18 L22 26 L29 14 L42 32 Z" fill="#2a5c44"/>
   <path d="M29 14 L34 21 L31.5 21 L36 27 L33 27 L42 32 L29 32 Z" fill="#37725a" opacity="0.6"/>
   <!-- Sun -->
-  <circle cx="14" cy="12" r="4" fill="#e9b44c"/>
+  <circle cx="14" cy="12" r="4" fill="#8fc1ea"/>
   <!-- Baseline -->
-  <rect x="6" y="32" width="36" height="2.5" fill="#e9b44c"/>
-  <text x="24" y="43" text-anchor="middle" font-family="Georgia, serif" font-size="8.5" font-weight="bold" fill="#faf7f0" letter-spacing="1">VT</text>
+  <rect x="6" y="32" width="36" height="2.5" fill="#8fc1ea"/>
+  <text x="24" y="43" text-anchor="middle" font-family="Georgia, serif" font-size="8.5" font-weight="bold" fill="#ffffff" letter-spacing="1">VT</text>
 </svg>
