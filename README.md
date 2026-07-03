@@ -54,12 +54,18 @@ Shared assets live in `css/styles.css`, `js/main.js`, and `assets/`.
 
 ## Deployment
 
-Upload the repository contents to any static host. Two easy free options:
+**GitHub Pages is already configured.** Every push to `main` auto-deploys via
+`.github/workflows/deploy-pages.yml` — the live URL is shown on each run in
+the Actions tab (and in Settings → Pages).
 
-- **GitHub Pages:** Settings → Pages → deploy from the default branch, then
-  point the `gabeforvt.com` DNS at GitHub Pages and set the custom domain.
-- **Netlify / Cloudflare Pages:** drag-and-drop the folder or connect the repo;
-  both serve `404.html` automatically and provide HTTPS.
+To serve the site at **gabeforvt.com**: in the repo's Settings → Pages, enter
+the custom domain, then at the domain registrar create a `CNAME` record
+pointing `www.gabeforvt.com` at `<owner>.github.io` (plus the four GitHub
+Pages `A` records on the apex domain), and enable "Enforce HTTPS" once the
+certificate is issued.
+
+Alternative hosts (Netlify / Cloudflare Pages) also work: connect the repo
+and deploy the root directory — no build command needed.
 
 To preview locally: `python3 -m http.server 8000` in the repo root, then open
 <http://localhost:8000>.
