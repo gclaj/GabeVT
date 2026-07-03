@@ -54,9 +54,14 @@ Shared assets live in `css/styles.css`, `js/main.js`, and `assets/`.
 
 ## Deployment
 
-**GitHub Pages is already configured.** Every push to `main` auto-deploys via
-`.github/workflows/deploy-pages.yml` — the live URL is shown on each run in
-the Actions tab (and in Settings → Pages).
+**GitHub Pages is already wired up.** Every push to `main` publishes the site
+to the `gh-pages` branch via `.github/workflows/deploy-pages.yml`.
+
+**One-time step to go live** (requires repo admin, ~15 seconds): go to
+**Settings → Pages → Build and deployment**, set Source to **"Deploy from a
+branch"**, choose branch **`gh-pages`** with folder **`/ (root)`**, and Save.
+The site then serves at `https://<owner>.github.io/GabeVT/` and updates
+automatically on every push to `main` from then on.
 
 To serve the site at **gabeforvt.com**: in the repo's Settings → Pages, enter
 the custom domain, then at the domain registrar create a `CNAME` record
